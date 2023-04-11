@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Pressable } from 'react-native';
-import Modal from './components/Modal';
+import Modal from '../components/Modal';
 
 const Home = () => {
   const [text, onChangeText] = useState('');

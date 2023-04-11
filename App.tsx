@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NativeRouter, Route, Link, Routes } from 'react-router-native';
 import About from './src/pages/About';
 import Home from './src/pages/Home';
-import Layout from './src/pages/components/Layout';
+import Layout from './src/components/Layout';
 import { Platform } from 'react-native';
 
 const App = () => {
