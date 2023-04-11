@@ -11,14 +11,16 @@
     "firefox:build": "webpack --mode=production --config ./web/webpack.config.js && cp web/manifest.firefox.json web/build/manifest.json && cp web/logo.png web/build/logo.png",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "windows": "react-native run-windows"
   },
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "^18.2.0",
     "react-native": "0.71.6",
     "react-native-web": "^0.18.9",
-    "react-router-native": "^6.10.0"
+    "react-router-native": "^6.10.0",
+    "react-native-windows": "0.71.5"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -42,7 +44,8 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.78.0",
     "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.13.2"
+    "webpack-dev-server": "^4.13.2",
+    "metro-config": "^0.73.9"
   },
   "jest": {
     "preset": "react-native"
