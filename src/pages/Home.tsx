@@ -17,11 +17,13 @@ const Home = () => {
       </Text>
 
       <TextInput
+        testID='text-input'
         style={styles.input}
         onChangeText={onChangeText}
         value={text}
       />
       <Pressable
+        testID='submit-btn'
         style={styles.button}
         onPress={() => setModalVisible(!modalVisible)}
       ><Text style={styles.textStyle}>Submit</Text></Pressable>
@@ -31,8 +33,9 @@ const Home = () => {
       >
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
-            <Text style={styles.modalText}>You have typed: {text}!</Text>
+            <Text style={styles.modalText}>{`You have typed: ${text}!`}</Text>
             <Pressable
+              testID='confirm-btn'
               style={styles.button}
               onPress={() => setModalVisible(!modalVisible)}
             >

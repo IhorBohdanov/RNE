@@ -11,13 +11,14 @@ const App = () => {
     <NativeRouter>
       <Layout>
         <View style={styles.nav}>
-          <Link to="/" style={styles.navItem}>
+          <Link to="/" style={styles.navItem} testID='navigation-home'>
             <Text style={styles.navItemText}>Home</Text>
           </Link>
 
           <Link
             to="/about"
-            style={styles.navItem}>
+            style={styles.navItem}
+            testID='navigation-about'>
             <Text style={styles.navItemText}>About</Text>
           </Link>
         </View>
@@ -37,6 +38,7 @@ const styles = StyleSheet.create({
   nav: {
     flexDirection: (Platform.OS === 'web') ? 'column' : 'row',
     backgroundColor: '#eee',
+    marginTop: (Platform.OS === 'ios') ? 40 : 0
   },
   navItem: {
     backgroundColor: '#eee',
